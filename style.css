@@ -21,22 +21,6 @@ header {
     border-bottom: 1px solid #ddd; 
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav a {
-    text-decoration: none; 
-    color: #333; 
-}
-
 /* Hero Section */
 #hero {
     padding: 60px 0; 
@@ -109,6 +93,19 @@ nav a {
 .feature h3 {
     color: #28a745;
 }
+
+/* Interface Section */
+#interface {
+    background-color: #f8f8f8; 
+    padding: 40px 0;
+    text-align: center; 
+}
+
+#interface img { 
+    max-width: 100%; /* Make interface images responsive */
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space below images */
 }
 
 /* Testimonials Section */
@@ -127,31 +124,44 @@ nav a {
     text-align: center; 
 }
 
-/* ... (other styles) ... */
+/* Buy Now Section */
+#buy-now {
+    text-align: left;
+    padding: 40px 0;
+}
+
+.price {
+    font-size: 2em; 
+    margin-bottom: 20px;
+}
+
+#buy-now .cta-button { /* Style the "Buy Now" button */
+    background-color: #ff6600; 
+}
 
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) { 
 
     .container {
-        max-width: 90%; /* Make the container take up more relative space */
-        padding: 0 15px; /* Reduce padding */
+        max-width: 90%; 
+        padding: 0 15px; 
     }
 
     .hero-grid {
-        grid-template-columns: 1fr; /* Stack the image and text vertically */
-        gap: 30px; /* Reduce the gap */
+        grid-template-columns: 1fr;
+        gap: 30px; 
     }
 
     .hero-text h2 {
-        font-size: 2em; /* Slightly smaller heading */
+        font-size: 2em; 
     }
 
     .features-grid {
-        grid-template-columns: 1fr; /* Stack features vertically */
+        grid-template-columns: 1fr;
     }
 
     #interface img {
-        max-width: 100%; /* Make the interface image take full width */
+        max-width: 100%;
     }
 }
 
