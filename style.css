@@ -127,6 +127,34 @@ nav a {
     text-align: center; 
 }
 
+/* ... (other styles) ... */
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) { 
+
+    .container {
+        max-width: 90%; /* Make the container take up more relative space */
+        padding: 0 15px; /* Reduce padding */
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr; /* Stack the image and text vertically */
+        gap: 30px; /* Reduce the gap */
+    }
+
+    .hero-text h2 {
+        font-size: 2em; /* Slightly smaller heading */
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr; /* Stack features vertically */
+    }
+
+    #interface img {
+        max-width: 100%; /* Make the interface image take full width */
+    }
+}
+
 /* Footer */
 footer {
     background-color: #333; 
